@@ -51,11 +51,29 @@ sudo apt install ros-melodic-desktop-full
 This provides pretrained weights that can be used to initialize fine-tuning of a custom model
 
 ## **4. Download the training notebook and provide directories to your template and target images**
-A template and target image folder is provided containing GBDT images of example strcuture used in the paper.
-Replace these images with Yours
+A template and target image folder is provided containing GBDT images and ground truth poses of example structure used in the paper.
+Replace these images with yours.
 
-## **5. Download the GBDTpose deployment notebook and the EKF python script**
-The deploymement notebook uses the customized model to predict poses given input images, and publishes the pose to the UAV.
-If the T265 camera is used, run the GBDTpose EKF script for integration. Mavros is required for transmitting the poses to the UAV. 
-Follow these instrcutions to setup mavros for Ardupilot flight controller.
+## **5. Download the Deployment Notebook and EKF Script**
 
+The **GBDTpose deployment notebook** uses a custom-trained model to predict poses from input images and publish them to the UAV.  
+
+If you're using an Intel RealSense **T265** camera, we recommend running the **GBDTpose EKF script**, which fuses visual odometry with predicted poses using an Extended Kalman Filter (EKF).
+
+To transmit poses to your UAV, **MAVROS** is required. MAVROS acts as a communication bridge between ROS and the flight controller (e.g., Pixhawk with ArduPilot or PX4).
+
+---
+
+### **MAVROS Installation for ArduPilot/PX4**
+
+Follow the official guide to install MAVROS and set it up with your flight controller:  
+🔗 [MAVROS Installation Guide – ArduPilot/PX4](https://ardupilot.org/dev/docs/ros-install.html)
+
+---
+
+### **Launching MAVROS**
+
+To connect MAVROS to your flight controller over USB or telemetry (e.g., `/dev/ttyUSB0`), use:
+
+```bash
+roslaunch mavros apm.launch fcu_url:=/dev/ttyUSB0:57600
