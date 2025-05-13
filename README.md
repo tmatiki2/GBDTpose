@@ -25,7 +25,6 @@ Be sure to select **version 9**, which is compatible with ROS Noetic.
 ---
 
 ## **Installation Instructions**
-## **Clone the repository**
 
 ### **1. Install the Required Python Packages**
 
@@ -46,3 +45,4 @@ To install ROS Melodic, run:
 sudo apt update
 sudo apt install ros-melodic-desktop-full
 ```
+## **3. Download pretarined weights from the releases -- For Resnet and VIT backbones**
