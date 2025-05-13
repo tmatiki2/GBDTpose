@@ -1,6 +1,6 @@
 # **GBDTpose**
 
-**GBDTpose** is a vision-based pose estimation pipeline. This repository contains starter code to help you get started.  
+**GBDTpose** is a vision-based parametric localization framework. This repository contains starter code to help you get started.  
 Example videos demonstrate drone localization in action.
 
 📹 **Watch the demo videos here:**  
