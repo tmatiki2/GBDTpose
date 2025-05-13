@@ -1,8 +1,10 @@
 # **GBDTpose**
 
-This repository contains starter code for implementing **GBDTpose**, a vision-based pose estimation pipeline.  
-Example videos demonstrate drone localization using GBDTpose.
+**GBDTpose** is a vision-based pose estimation pipeline. This repository contains starter code to help you get started.  
+Example videos demonstrate drone localization in action.
 
+📹 **Watch the demo videos here:**  
+[Google Drive - GBDTpose Demos](https://drive.google.com/drive/folders/126kFGxMAw3pU-g0phBOq0ywAM3b9NQak)
 ---
 
 ## **Data**
