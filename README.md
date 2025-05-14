@@ -1,6 +1,6 @@
 # **Parametric GBDTpose**
 
-**Parametric GBDTpose** is a vision-based localization framework that leverages a Graphics-Based Digital Twin (GBDT) to train a siamese neural network for pose estimation. The GBDT being a photorealistic computer graphics model of the physical environment, provides synthetic image data for training and evaluation of the pose regressor. This pose regressor (GBDTpose) can be integrated with the Pixhawk flight controller, Ardupilot, and Mission Planner software for UAV navigation in GPS-denied environments.
+**Parametric GBDTpose** is a vision-based localization framework that leverages a Graphics-Based Digital Twin (GBDT) to train a siamese neural network for accurate pose estimation. The GBDT being a photorealistic computer graphics model of the physical environment, provides synthetic image data for training and evaluating the pose regressor. This pose regressor (GBDTpose) can be integrated with the Pixhawk flight controller, Ardupilot, and Mission Planner software for UAV navigation in GPS-denied environments.
 Example videos demonstrate drone localization in action using GBDTpose. 
 
 📹 **Watch the demo videos here:**  
