@@ -1,14 +1,15 @@
 # **Parametric GBDTpose**
 
-**Parametric GBDTpose** is a vision-based localization framework that leverages a Graphics-based digital twin (GBDT) to train a siamese neural network for pose estimation. This repository contains starter code to help you get started.
-If you find this repository useful, contact the author at (thomasngare5@gmail.com). Also cite the paper: 
-"Leveraging Graphics-Based Digital Twin to Develop Scalable Parametric Pose Regressor for UAV Localization in GPS-denied Environments"
-
+**Parametric GBDTpose** is a vision-based localization framework that leverages a Graphics-Based Digital Twin (GBDT) to train a siamese neural network for pose estimation. The GBDT being a photorealistic computer graphics model of the physical environment, provides synthetic image data for training and evaluation of the indetified pose regressor. This pose regressor (GBDTpose) can be integrated with the Pixhawk flight controller, Ardupilot, and Mission Planner software for UAV navigation in GPS-denied environments.
 Example videos demonstrate drone localization in action using GBDTpose. 
 
 📹 **Watch the demo videos here:**  
 [Google Drive - GBDTpose Demos](https://drive.google.com/drive/folders/126kFGxMAw3pU-g0phBOq0ywAM3b9NQak)
----
+
+This repository contains starter code to help you get started with training and deploying **GBDTpose** on your custom UAV platform.
+If you find this repository useful, cite the paper: 
+"Leveraging Graphics-Based Digital Twin to Develop Scalable Parametric Pose Regressor for UAV Localization in GPS-denied Environments".
+Contact the author at (thomasngare5@gmail.com).
 
 ## **Data**
 
