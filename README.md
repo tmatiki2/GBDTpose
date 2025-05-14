@@ -1,7 +1,7 @@
-# **GBDTpose**
+# **Parametric GBDTpose**
 
-**GBDTpose** is a vision-based parametric localization framework. This repository contains starter code to help you get started.  
-Example videos demonstrate drone localization in action.
+**Parametric GBDTpose** is a vision-based localization framework that uses a Nueral network for pose estimation. This repository contains starter code to help you get started.  
+Example videos demonstrate drone localization in action using GBDTpose.
 
 📹 **Watch the demo videos here:**  
 [Google Drive - GBDTpose Demos](https://drive.google.com/drive/folders/126kFGxMAw3pU-g0phBOq0ywAM3b9NQak)
@@ -18,7 +18,9 @@ The repository includes:
 
 ## **Simulation with Gazebo**
 
-To stream images from the GBDT in real-time using Gazebo:
+To fine-tune/train GBDTpose, still images of the GBDT in **Blender** can be rendered at predetermined poses; however, this can be time-consuming.
+Alternatively, Gazebo can be used to stream images of the GBDT in real-time as presented in the paper. 
+Follow instructions below to setup Gazebo. Note that Ubuntu 18.04 and ROS Melodic is required.
 
 Download **Gazebo v9** here:  
 [https://classic.gazebosim.org/install](https://classic.gazebosim.org/install)  
