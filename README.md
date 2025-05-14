@@ -25,6 +25,14 @@ Download **Gazebo v9** here:
 Be sure to select **version 9**, which is compatible with ROS Melodic.
 To create and launch the world file for Gazebo, follow this link:
 [https://classic.gazebosim.org/tutorials?tut=ros_roslaunch](https://classic.gazebosim.org/tutorials?tut=ros_roslaunch)
+An example world file **gbdt_world.world** with fisheye camera sensors is provided. Replace the **sdf** file path (line ##) with your custom GBDT sdf model.
+Use Ros to stream images from Gazebo following this link:
+[https://classic.gazebosim.org/tutorials/?tut=ros_comm](https://classic.gazebosim.org/tutorials/?tut=ros_comm)
+An example python code to reconfigure the fisheye cameras with ROS is provided, together with the launch file.
+Simply run: 
+```bash
+roslaunch offboard_py agent.launch
+```
 
 ---
 
