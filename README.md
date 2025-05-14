@@ -19,7 +19,7 @@ The repository includes:
 ## **Simulation with Gazebo**
 
 To fine-tune/train GBDTpose, still images of the GBDT in **Blender** can be rendered at predetermined poses; however, this can be time-consuming.
-Alternatively, Gazebo can be used to stream images of the GBDT in real-time as presented in the paper. 
+Alternatively, Gazebo can be used to stream images of the GBDT in real-time for training the Siamese network as presented in the paper. 
 Follow instructions below to setup Gazebo. Note that Ubuntu 18.04 and ROS Melodic is required.
 
 Download **Gazebo v9** here:  
