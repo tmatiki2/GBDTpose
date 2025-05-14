@@ -1,7 +1,10 @@
 # **Parametric GBDTpose**
 
-**Parametric GBDTpose** is a vision-based localization framework that uses a siamese neural network for pose estimation. This repository contains starter code to help you get started.  
-Example videos demonstrate drone localization in action using GBDTpose.
+**Parametric GBDTpose** is a vision-based localization framework that uses a siamese neural network for pose estimation. This repository contains starter code to help you get started.
+If you find this repository useful, contact the author at (thomasngare5@gmail.com). Also cite the paper: 
+"Leveraging Graphics-Based Digital Twin to Develop Scalable Parametric Pose Regressor for UAV Localization in GPS-denied Environments"
+
+Example videos demonstrate drone localization in action using GBDTpose. 
 
 📹 **Watch the demo videos here:**  
 [Google Drive - GBDTpose Demos](https://drive.google.com/drive/folders/126kFGxMAw3pU-g0phBOq0ywAM3b9NQak)
