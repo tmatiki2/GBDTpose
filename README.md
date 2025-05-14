@@ -12,7 +12,7 @@ Example videos demonstrate drone localization in action.
 The repository includes:
 
 - **Template images** and **source images** — feel free to replace them with your own.
-- **Template poses** (ground truth) and **source poses** — available in the respective directories.
+- **Template poses** and **source poses** — available in the respective directories.
 
 ---
 
