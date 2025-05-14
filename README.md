@@ -8,7 +8,7 @@ Example videos demonstrate drone localization in action using GBDTpose.
 
 This repository contains starter code to help you get started with training and deploying **GBDTpose** on your custom UAV platform.
 If you find this repository useful, cite the paper: 
-"Leveraging Graphics-Based Digital Twin to Develop Scalable Parametric Pose Regressor for UAV Localization in GPS-denied Environments".
+"*Leveraging Graphics-Based Digital Twin to Develop Scalable Parametric Pose Regressor for UAV Localization in GPS-denied Environments*".
 Contact the author at (thomasngare5@gmail.com).
 
 ## **Data**
