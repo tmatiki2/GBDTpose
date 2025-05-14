@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/thomas/catkin_ws/src/offboard_py/build/devel/setup.sh

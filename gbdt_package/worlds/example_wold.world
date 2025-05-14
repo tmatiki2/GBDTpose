@@ -1,0 +1,860 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+  <world name='default'>
+    <light name='some_light' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
+      <diffuse>0.7 0.7 0.7 0</diffuse>
+      <specular>1 1 1 0</specular>
+      <attenuation>
+        <range>10</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-1 -1 -1</direction>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name='default'>
+      <sim_time>350 581000000</sim_time>
+      <real_time>10 111102066</real_time>
+      <wall_time>1710285516 243985819</wall_time>
+      <iterations>10098</iterations>
+      <model name='example_sdf'>
+        <pose frame=''>-3.96708 2.78094 14.7555 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link_0'>
+          <pose frame=''>-3.96708 2.78094 14.7555 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='0_uav_kinect'>
+        <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='1_uav_kinect'>
+        <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='2_uav_kinect'>
+        <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='3_uav_kinect'>
+        <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='4_uav_kinect'>
+        <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='5_uav_kinect'>
+        <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>4.5 1e-06 0.036 3e-06 4e-06 -1e-06</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='some_light'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>30.5786 -16.3975 -12.7396 0 -0.240356 2.65619</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='0_uav_kinect'>
+      <pose frame=''>-2.91002 5.5295 0.036 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <pose frame=''>0 -1 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <gravity>0</gravity>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.073 0.276 0.072</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <transparency>1</transparency>
+          <geometry>
+            <mesh>
+              <uri>model://kinect/meshes/kinect.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='camera_imu' type='imu'>
+          <always_on>1</always_on>
+          <imu/>
+        </sensor>
+        <sensor name='camera' type='wideanglecamera'>
+          <pose frame=''>-0.0 0 -0.0 0 -0 3.14159</pose>
+          <update_rate>30</update_rate>
+          <camera name='__default__'>
+            <horizontal_fov>2.85</horizontal_fov>
+            <image>
+              <format>B8G8R8</format>
+              <width>848</width>
+              <height>800</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+            <lens>
+              <type>custom</type>  
+              <custom_function>
+                <c1>1.0</c1>          
+                <c2>1.0</c2>             
+                <c3>0</c3>             
+                <f>285.86</f>            
+                <fun>sin</fun>         
+              </custom_function>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707</cutoff_angle>
+              <env_texture_size>848</env_texture_size> 
+            </lens>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>10</update_rate>
+          <visualize>1</visualize>
+          <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
+            <baseline>0.2</baseline>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>0uav_camera_ir</cameraName>
+            <imageTopicName>/0uav_camera/color/image_raw</imageTopicName>
+            <cameraInfoTopicName>/0uav_camera/color/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/0uav_camera/depth/image_rect_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>/0uav_camera/depth/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>/0uav_camera/depth/points</pointCloudTopicName>
+            <frameName>0uav_camera_link</frameName>
+            <distortionK1>-0.0101</distortionK1>
+            <distortionK2>0.0494</distortionK2>
+            <distortionK3>-0.046</distortionK3>
+            <distortionT1>0.00866</distortionT1>
+            <distortionT2>-0.00005</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>414.663</Cx>
+            <Cy>385.0</Cy>
+            <hackBaseline>0</hackBaseline>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='1_uav_kinect'>
+      <pose frame=''>-2.91002 5.5295 0.036 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <pose frame=''>0 -1 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <gravity>0</gravity>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.073 0.276 0.072</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <transparency>1</transparency>
+          <geometry>
+            <mesh>
+              <uri>model://kinect/meshes/kinect.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='camera_imu' type='imu'>
+          <always_on>1</always_on>
+          <imu/>
+        </sensor>
+        <sensor name='camera' type='wideanglecamera'>
+          <pose frame=''>-0.0 0 -0.0 0 -0 3.14159</pose>
+          <update_rate>30</update_rate>
+          <camera name='__default__'>
+            <horizontal_fov>2.85</horizontal_fov> 
+            <image>
+              <format>B8G8R8</format>
+              <width>848</width>
+              <height>800</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+            <lens>
+              <type>custom</type>  
+              <custom_function>
+                <c1>1.0</c1>          
+                <c2>1.0</c2>             
+                <c3>0</c3>             
+                <f>285.86</f>             
+                <fun>sin</fun>         
+              </custom_function>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707</cutoff_angle>
+              <env_texture_size>848</env_texture_size> 
+            </lens>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>10</update_rate>
+          <visualize>1</visualize>
+          <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
+            <baseline>0.2</baseline>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>1uav_camera_ir</cameraName>
+            <imageTopicName>/1uav_camera/color/image_raw</imageTopicName>
+            <cameraInfoTopicName>/1uav_camera/color/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/1uav_camera/depth/image_rect_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>/1uav_camera/depth/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>/1uav_camera/depth/points</pointCloudTopicName>
+            <frameName>1uav_camera_link</frameName>
+            <distortionK1>-0.0101</distortionK1>
+            <distortionK2>0.0494</distortionK2>
+            <distortionK3>-0.046</distortionK3>
+            <distortionT1>0.00866</distortionT1>
+            <distortionT2>-0.00005</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>414.663</Cx>
+            <Cy>385.0</Cy>
+            <hackBaseline>0</hackBaseline>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='2_uav_kinect'>
+      <pose frame=''>-2.91002 5.5295 0.036 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <pose frame=''>0 -1 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <gravity>0</gravity>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.073 0.276 0.072</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <transparency>1</transparency>
+          <geometry>
+            <mesh>
+              <uri>model://kinect/meshes/kinect.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='camera_imu' type='imu'>
+          <always_on>1</always_on>
+          <imu/>
+        </sensor>
+        <sensor name='camera' type='wideanglecamera'>
+          <pose frame=''>-0.0 0 -0.0 0 -0 3.14159</pose>
+          <update_rate>30</update_rate>
+          <camera name='__default__'>
+            <horizontal_fov>2.85</horizontal_fov> 
+            <image>
+              <format>B8G8R8</format>
+              <width>848</width>
+              <height>800</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+            <lens>
+              <type>custom</type>  
+              <custom_function>
+                <c1>1.0</c1>        
+                <c2>1.0</c2>            
+                <c3>0</c3>            
+                <f>285.86</f>           
+                <fun>sin</fun>     
+              </custom_function>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707</cutoff_angle>
+              <env_texture_size>848</env_texture_size> 
+            </lens>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>10</update_rate>
+          <visualize>1</visualize>
+          <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
+            <baseline>0.2</baseline>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>2uav_camera_ir</cameraName>
+            <imageTopicName>/2uav_camera/color/image_raw</imageTopicName>
+            <cameraInfoTopicName>/2uav_camera/color/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/2uav_camera/depth/image_rect_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>/2uav_camera/depth/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>/2uav_camera/depth/points</pointCloudTopicName>
+            <frameName>2uav_camera_link</frameName>
+            <distortionK1>-0.0101</distortionK1>
+            <distortionK2>0.0494</distortionK2>
+            <distortionK3>-0.046</distortionK3>
+            <distortionT1>0.00866</distortionT1>
+            <distortionT2>-0.00005</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>414.663</Cx>
+            <Cy>385.0</Cy>
+            <hackBaseline>0</hackBaseline>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='3_uav_kinect'>
+      <pose frame=''>-2.91002 5.5295 0.036 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <pose frame=''>0 -1 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <gravity>0</gravity>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.073 0.276 0.072</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <transparency>1</transparency>
+          <geometry>
+            <mesh>
+              <uri>model://kinect/meshes/kinect.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='camera_imu' type='imu'>
+          <always_on>1</always_on>
+          <imu/>
+        </sensor>
+        <sensor name='camera' type='wideanglecamera'>
+          <pose frame=''>-0.0 0 -0.0 0 -0 3.14159</pose>
+          <update_rate>30</update_rate>
+          <camera name='__default__'>
+            <horizontal_fov>2.85</horizontal_fov> 
+            <image>
+              <format>B8G8R8</format>
+              <width>848</width>
+              <height>800</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+            <lens>
+              <type>custom</type>  
+              <custom_function>
+                <c1>1.0</c1>        
+                <c2>1.0</c2>           
+                <c3>0</c3>          
+                <f>285.86</f>         
+                <fun>sin</fun>        
+              </custom_function>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707</cutoff_angle>
+              <env_texture_size>848</env_texture_size> 
+            </lens>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>10</update_rate>
+          <visualize>1</visualize>
+          <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
+            <baseline>0.2</baseline>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>3uav_camera_ir</cameraName>
+            <imageTopicName>/3uav_camera/color/image_raw</imageTopicName>
+            <cameraInfoTopicName>/3uav_camera/color/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/3uav_camera/depth/image_rect_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>/3uav_camera/depth/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>/3uav_camera/depth/points</pointCloudTopicName>
+            <frameName>3uav_camera_link</frameName>
+            <distortionK1>-0.0101</distortionK1>
+            <distortionK2>0.0494</distortionK2>
+            <distortionK3>-0.046</distortionK3>
+            <distortionT1>0.00866</distortionT1>
+            <distortionT2>-0.00005</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>414.663</Cx>
+            <Cy>385.0</Cy>
+            <hackBaseline>0</hackBaseline>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='4_uav_kinect'>
+      <pose frame=''>-2.91002 5.5295 0.036 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <pose frame=''>0 -1 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <gravity>0</gravity>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.073 0.276 0.072</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <transparency>1</transparency>
+          <geometry>
+            <mesh>
+              <uri>model://kinect/meshes/kinect.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='camera_imu' type='imu'>
+          <always_on>1</always_on>
+          <imu/>
+        </sensor>
+        <sensor name='camera' type='wideanglecamera'>
+          <pose frame=''>-0.0 0 -0.0 0 -0 3.14159</pose>
+          <update_rate>30</update_rate>
+          <camera name='__default__'>
+            <horizontal_fov>2.85</horizontal_fov> 
+            <image>
+              <format>B8G8R8</format>
+              <width>848</width>
+              <height>800</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+            <lens>
+              <type>custom</type>  
+              <custom_function>
+                <c1>1.0</c1>         
+                <c2>1.0</c2>            
+                <c3>0</c3>            
+                <f>285.86</f>            
+                <fun>sin</fun>          
+              </custom_function>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707</cutoff_angle>
+              <env_texture_size>848</env_texture_size> 
+            </lens>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>10</update_rate>
+          <visualize>1</visualize>
+          <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
+            <baseline>0.2</baseline>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>4uav_camera_ir</cameraName>
+            <imageTopicName>/4uav_camera/color/image_raw</imageTopicName>
+            <cameraInfoTopicName>/4uav_camera/color/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/4uav_camera/depth/image_rect_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>/4uav_camera/depth/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>/4uav_camera/depth/points</pointCloudTopicName>
+            <frameName>4uav_camera_link</frameName>
+            <distortionK1>-0.0101</distortionK1>
+            <distortionK2>0.0494</distortionK2>
+            <distortionK3>-0.046</distortionK3>
+            <distortionT1>0.00866</distortionT1>
+            <distortionT2>-0.00005</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>414.663</Cx>
+            <Cy>385.0</Cy>
+            <hackBaseline>0</hackBaseline>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='5_uav_kinect'>
+      <pose frame=''>-2.91002 5.5295 0.036 0 -0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <pose frame=''>0 -1 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <gravity>0</gravity>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.073 0.276 0.072</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <transparency>1</transparency>
+          <geometry>
+            <mesh>
+              <uri>model://kinect/meshes/kinect.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='camera_imu' type='imu'>
+          <always_on>1</always_on>
+          <imu/>
+        </sensor>
+        <sensor name='camera' type='wideanglecamera'>
+          <pose frame=''>-0.0 0 -0.0 0 -0 3.14159</pose>
+          <update_rate>30</update_rate>
+          <camera name='__default__'>
+            <horizontal_fov>2.85</horizontal_fov> 
+            <image>
+              <format>B8G8R8</format>
+              <width>848</width>
+              <height>800</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+            <lens>
+              <type>custom</type>  
+              <custom_function>
+                <c1>1.0</c1>          
+                <c2>1.0</c2>             
+                <c3>0</c3>             
+                <f>285.86</f>             
+                <fun>sin</fun>         
+              </custom_function>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5707</cutoff_angle>
+              <env_texture_size>848</env_texture_size> 
+            </lens>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>10</update_rate>
+          <visualize>1</visualize>
+          <plugin name='cgo3_camera_controller' filename='libgazebo_ros_camera.so'>
+            <baseline>0.2</baseline>
+            <alwaysOn>1</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>5uav_camera_ir</cameraName>
+            <imageTopicName>/5uav_camera/color/image_raw</imageTopicName>
+            <cameraInfoTopicName>/5uav_camera/color/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/5uav_camera/depth/image_rect_raw</depthImageTopicName>
+            <depthImageCameraInfoTopicName>/5uav_camera/depth/camera_info</depthImageCameraInfoTopicName>
+            <pointCloudTopicName>/5uav_camera/depth/points</pointCloudTopicName>
+            <frameName>5uav_camera_link</frameName>
+            <distortionK1>-0.0101</distortionK1>
+            <distortionK2>0.0494</distortionK2>
+            <distortionK3>-0.046</distortionK3>
+            <distortionT1>0.00866</distortionT1>
+            <distortionT2>-0.00005</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>414.663</Cx>
+            <Cy>385.0</Cy>
+            <hackBaseline>0</hackBaseline>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    <model name='example_sdf'>
+      <link name='link_0'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+        </inertial>
+        <pose frame=''>-0 0 -0 0 -0 0</pose>
+        <gravity>0</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/username/catkin_ws/src/gbdt_package/dae_files/example_dae.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <transparency>0</transparency>
+          <cast_shadows>0</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose frame=''>-4.63226 1.9883 0 0 -0 0</pose>
+    </model>
+  </world>
+</sdf>

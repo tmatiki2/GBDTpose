@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="gui" value="false"/>
+		<arg name="world_name" default="/home/username/catkin_ws/src/gbdt_package/worlds/example_world.world"/> 
+        <arg name="debug" value="false"/>
+        <arg name="verbose" value="false"/>
+        <arg name="paused" value="false"/>
+        <arg name="respawn_gazebo" value="false"/>
+        <param name="use_sim_time" value="true"/>
+    </include>
+	<node pkg="offboard_py" type="agent1c.py" name="agent" required="true" output="screen" />
+</launch>
