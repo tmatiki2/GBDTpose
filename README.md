@@ -22,7 +22,9 @@ To stream images from the GBDT in real-time using Gazebo:
 
 Download **Gazebo v9** here:  
 [https://classic.gazebosim.org/install](https://classic.gazebosim.org/install)  
-Be sure to select **version 9**, which is compatible with ROS Noetic.
+Be sure to select **version 9**, which is compatible with ROS Melodic.
+To create and launch the world file for Gazebo, follow this link:
+[https://classic.gazebosim.org/tutorials?tut=ros_roslaunch](https://classic.gazebosim.org/tutorials?tut=ros_roslaunch)
 
 ---
 
@@ -52,13 +54,13 @@ This provides pretrained weights that can be used to initialize fine-tuning of a
 
 ## **4. Download the training notebook and provide directories to your template and target images**
 A template and target image folder is provided containing GBDT images and ground truth poses of example structure used in the paper.
-Replace these images with yours.
+Replace these images with yours. Alternatively, Gazebo can be used to stream images at various poses in real-time for training.
 
 ## **5. Download the Deployment Notebook and EKF Script**
 
-The **GBDTpose deployment notebook** uses a custom-trained model to predict poses from input images and publish them to the UAV.  
+The **GBDTpose deployment notebook** uses the custom-trained model to predict poses from input images and publish them to the UAV.  
 
-If you're using an Intel RealSense **T265** camera, we recommend running the **GBDTpose EKF script**, which fuses visual odometry with predicted poses using an Extended Kalman Filter (EKF).
+If you're using an Intel RealSense **T265** camera, the **GBDTpose EKF script**, which fuses visual odometry with predicted poses using an Extended Kalman Filter (EKF) can be used to improve localization.
 
 To transmit poses to your UAV, **MAVROS** is required. MAVROS acts as a communication bridge between ROS and the flight controller (e.g., Pixhawk with ArduPilot or PX4).
 
