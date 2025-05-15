@@ -9,5 +9,5 @@
         <arg name="respawn_gazebo" value="false"/>
         <param name="use_sim_time" value="true"/>
     </include>
-	<node pkg="offboard_py" type="agent1c.py" name="agent" required="true" output="screen" />
+	<node pkg="gbdt_package" type="agent.py" name="agent" required="true" output="screen" />
 </launch>
