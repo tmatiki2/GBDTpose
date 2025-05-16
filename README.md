@@ -31,7 +31,7 @@ Download **Gazebo v9** here:
 
 Be sure to select **version 9**, which is compatible with ROS Melodic.
 
-An example Gazebo world file **example_world.world** that hosts the GBDT together with fisheye camera sensors is provided in the **gbdt_package**. Replace the **sdf** file path (line ##) with your custom GBDT sdf model. A python code **agent.py** to reconfigure the fisheye cameras with ROS is provided in **gbdt_package**, together with the launch file **agent.launch**. Downlaod the **gbdt_package** to your **catkin/src** workspace, then run the following:
+An example Gazebo world file **example_world.world** that hosts the GBDT together with fisheye camera sensors is provided in the **gbdt_package**. Replace the **sdf** file path (line #847) with your custom GBDT sdf model. A python code **agent.py** to reconfigure the fisheye cameras with ROS is provided in **gbdt_package**, together with the launch file **agent.launch**. Also provide the path to the launch file in your directory in line #5 of the launch file. Downlaod the **gbdt_package** to your **catkin/src** workspace, then run the following:
 ```bash
 cd ~/catkin_ws
 catkin_make
