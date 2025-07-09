@@ -31,7 +31,7 @@ Download **Gazebo v9** here:
 
 Be sure to select **version 9**, which is compatible with ROS Melodic.
 
-An example Gazebo world file **example_world.world** that hosts the GBDT together with fisheye camera sensors is provided in the **gbdt_package**. Replace the **sdf** file path (line #847) with your custom GBDT sdf model. A python code **agent.py** to reconfigure the fisheye cameras with ROS is provided in **gbdt_package**, together with the launch file **agent.launch**. Also provide the path to the launch file in your directory in line #5 of the launch file. Downlaod the **gbdt_package** to your **catkin/src** workspace, then run the following:
+An example Gazebo world file **example_world.world** that hosts the GBDT together with wideangle camera sensors is provided in the **gbdt_package**. Replace the **sdf** file path (line #847) with your custom GBDT sdf model. A python code **agent.py** to reconfigure the wideangle cameras with ROS is provided in **gbdt_package**, together with the launch file **agent.launch**. Also provide the path to the launch file in your directory in line #5 of the launch file. Downlaod the **gbdt_package** to your **catkin/src** workspace, then run the following:
 ```bash
 cd ~/catkin_ws
 catkin_make
@@ -42,7 +42,7 @@ More details on use of Gazebo and ROS for image streaming can be found in the fo
 [https://classic.gazebosim.org/tutorials?tut=ros_roslaunch](https://classic.gazebosim.org/tutorials?tut=ros_roslaunch)
 [https://classic.gazebosim.org/tutorials/?tut=ros_comm](https://classic.gazebosim.org/tutorials/?tut=ros_comm)
 
-It is recommended to first stream and store template images from the fisheye cameras in a folder and recall them during training, as presented in the paper. Run the **streaming_images.ipynd** notebook to subscripe to images of the GBDT from the fisheye cameras in Gazebo.
+It is recommended to first stream and store template images from the wideangle cameras in a folder and recall them during training, as presented in the paper. Run the **streaming_images.ipynd** notebook to subscripe to images of the GBDT from the wideangle cameras in Gazebo.
 
 ---
 
